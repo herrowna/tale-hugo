@@ -20,8 +20,8 @@
 		{{- $cssTarget		:= "css/style.css" }}
 		{{- $cssOptions		:= cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}		
 		{{- $style			:= resources.Get "scss/tale.scss" | toCSS $cssOptions }}
-  		<link rel="stylesheet" href="{{ $style.RelPermalink }}">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+			<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+			<link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
 	
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" sizes="32x32" href="{{ .Site.BaseURL }}images/favicon-32x32.png">

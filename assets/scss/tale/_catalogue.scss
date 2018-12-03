@@ -1,9 +1,11 @@
 .catalogue {
   &-item {
-    border-bottom: 1px solid $grey-2;
-    color: $default-color;
     display: block;
+
     padding: 2rem 0;
+
+    color: $default-color;
+    border-bottom: 1px solid $grey-2;
 
     &:hover .catalogue-line,
     &:focus .catalogue-line {
@@ -16,24 +18,33 @@
   }
 
   &-time {
-    color: $default-tint;
-    font-family: $serif-secondary;
     letter-spacing: .5px;
+
+    color: $default-tint;
+
+    font-family: $sans-serif;
+    font-size: 0.8rem;
   }
 
   &-title {
-    color: $default-shade;
     display: block;
+
+    margin: .5rem 0;
+
+    color: $default-shade;
+
     font-family: $sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    margin: .5rem 0;
   }
 
   &-line {
-    @include transition(all .3s ease-out);
-    border-top: .2rem solid $default-shade;
     display: block;
+
     width: 2rem;
+
+    border-top: .3rem solid $default-tint;
+
+    @include transition(all .3s ease-out);
   }
 }
